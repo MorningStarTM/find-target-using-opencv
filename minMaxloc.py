@@ -36,8 +36,8 @@ while True:
         cv2.imwrite("./video/image.jpg", image)
 
         with open("./coordinate/coor.txt", "w") as f:
-            f.write(str(maxLoc[0])+"\t")
-            f.write(str(maxLoc[1]))
+            f.write(str(maxLoc[0])+","+"\t")
+            f.write(str(1080-maxLoc[1]))
     else:
         print("file is not exist")
 
